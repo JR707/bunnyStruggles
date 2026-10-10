@@ -1,0 +1,493 @@
+:root {
+    --primary: #7b9ddc;
+    --transparent: #7b9ddca8;
+}
+
+#about {
+    display: flex;
+}
+
+#about_title {
+    flex: 1;
+    color: var(--primary);
+    min-width: 200px;
+}
+
+#about_area {
+    flex: 2;
+    font-weight: lighter;
+    color: var(--primary);
+    background-color: white;
+    padding: 8px;
+    border-radius: 25px;
+    min-width: 300px;
+}
+
+.apt {
+    box-sizing: border-box;
+    width: 20vw;
+    height: auto;
+    margin-right: 8px;
+}
+
+.apt:hover {
+    cursor: pointer;
+    border: 4px solid var(--primary);
+
+}
+
+#art_prints {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: none;
+}
+
+#art_prints_title {
+    background-color: var(--primary);
+    padding: 8px;
+    border-radius: 20px;
+    color: white;
+    font-weight: lighter;
+}
+
+#banner {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#banner > img {
+    width: 100%;
+    height: auto;
+}
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+#contact_form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    background-color: var(--primary);
+    border-radius: 25px;
+    padding: 16px;
+    color: white;
+    justify-content: space-around;
+    display: none;
+}
+
+#contact_form button {
+    border: 4px solid white;
+    font-family: 'Story of Bela', sans-serif;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 16pt;
+}
+
+#contact_form button:hover {
+    background-color: white;
+    color: var(--primary)
+}
+
+#events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+}
+
+#events_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#events_gallery > div {
+    box-sizing: border-box;
+    min-width: 140px;
+    width: 30%;
+    aspect-ratio: 4/3;
+    margin: 16px 8px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 8px solid var(--primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#events_title {
+    width: 70%;
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 32px;
+}
+
+footer {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 64px;
+    background: linear-gradient(to top, var(--primary) 30%, #7b9ddc00 100%);
+    min-height: 20vh;
+    align-items: flex-end;
+    padding: 16px;
+}
+
+#footer_links {
+    color: white;
+}
+
+footer > a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer_links img {
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+}
+
+#footer_logo {
+    color: white;
+    margin: 0px;
+}
+
+h2 {
+    margin: 8px;
+}
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    padding-top: 16px;
+}
+
+#header_logo {
+    width: 64px;
+    height: 64px;
+} 
+
+#header_social_links {
+    box-sizing: border-box;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+#header_social_links img {
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    margin: 12px;
+}
+
+hr {
+    border: 4px solid var(--primary);
+    width: 100%;
+    margin-top: 60px;
+}
+
+html {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background-image: url('./images/background.png');
+    background-repeat: repeat;
+    background-size: 100vw auto;
+    font-family: 'Story of Bela', sans-serif;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#keychains {
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--transparent);
+}
+
+#keychains_title {
+    display: block;
+    box-sizing: border-box;
+    color: var(--primary);
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px;
+    width: fit-content;
+}
+
+#keychains_gallery {
+    width: 100%;
+    height: auto;
+}
+
+#lbl {
+    background-image: url('./images/events/thumbnails/lbl/1.jpg');
+}
+
+main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+#modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.562);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+nav {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    min-width: 40%;
+}
+
+nav > a {
+    font-size: 24pt;
+    color: var(--primary);
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+nav > a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#onepiece {
+    background-image: url('./images/stickers/onePiece.png');
+}
+
+#poses {
+    background-image: url('./images/stickers/poses.png');
+}
+
+#pride_25 {
+    background-image: url('./images/events/thumbnails/pride_25/1.jpg');
+}
+
+#pride_26 {
+    background-image: url('./images/events/thumbnails/pride_26/1.jpg');
+}
+
+#print_carousel {
+    overflow-x: scroll;
+    width: 100%;
+    display: flex;
+}
+
+#print_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#print_gallery > img {
+    box-sizing: border-box;
+    width: 20%;
+    height: auto;
+    margin: 2%;
+}
+
+#gallery_viewer {
+    width: 80%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#redding_spring {
+    background-image: url('./images/events/thumbnails/redding_spring/1.jpg');
+}
+
+#redding_summer {
+    background-image: url('./images/events/thumbnails/redding_summer/1.JPG');
+}
+
+#reno {
+    background-image: url('./images/events/thumbnails/reno/1.jpg');
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section {
+    margin-top: 32px;
+    min-height: 30vh;
+    width: 100%;
+    border-radius: 25px;
+}
+
+#standee {
+    background-image: url('./images/stickers/standee.png');
+}
+
+#stickers {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sticker_area {
+    width: 25%;
+    aspect-ratio: 6/9;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    border: 8px solid #6d7fa7;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#stickers_title {
+    color: var(--primary);
+    background-color: white;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 8px;
+}
+
+.text_overlay {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.text_overlay:hover {
+    background-color: rgba(0, 0, 0, 0.788);
+    cursor: pointer;
+}
+
+.text_overlay > p {
+    color: rgba(255, 255, 255, 0);
+}
+
+.text_overlay:hover > p {
+    color: white;
+}
+
+#viewer {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+}
+
+
+#viewer_carousel {
+    overflow-x: scroll;
+    display: flex;
+    width: 100%;
+    margin-top: 64px;
+}
+
+#viewer_img {
+    max-width: 100vw;
+    max-height: 70vh;
+}
+
+.vt {
+    box-sizing: border-box;
+    width: 20vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.vt:hover {
+    cursor: pointer;
+    border: 4px solid var(--primary);
+}
+
+@media (max-width: 768px) {
+    .hideOnSmall {
+        display: none;
+    }
+
+    .wrapOnSmall {
+        flex-wrap: wrap;
+    }
+
+    .wrapOnSmallReverse {
+        flex-wrap: wrap-reverse;
+        padding-right: 70%;
+
+    }
+
+    .scaleFont {
+        font-size: 16pt;
+    }
+
+    .scaleFontLarge {
+        font-size: 20pt;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .hideOnSmall {
+        display: flex;
+    }
+
+    .wrapOnSmall {
+        flex-wrap: nowrap;
+    }
+
+    .wrapOnSmallReverse {
+        flex-wrap: nowrap;
+    }
+
+    .scaleFont {
+        font-size: 24pt;
+    }
+
+    .scaleFontLarge {
+        font-size: 40pt;
+    }
+}
